@@ -1,7 +1,10 @@
-﻿namespace MinimalApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MinimalApi.Models
 {
     public sealed class Book
     {
+        [Key]
         public string Isbn { get; set; } = default!;
         public string Title { get; set; } = default!;
         public string ShortDescription { get; set; } = default!;
